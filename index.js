@@ -131,12 +131,13 @@ const uceBolunenlerinToplami = uceTamBolunenler.reduce((ilk, son) => ilk + son, 
 console.log(uceBolunenlerinToplami);
 // 3d çözümü
 
-/* kodlar buraya */
+const besyuzdenKucukSayilar = sayilar.filter((sayi) => sayi < 500);
+console.log(besyuzdenKucukSayilar);
 
 // 3e çözümü
 
-/* kodlar buraya */
-
+const siraliSayilar = besyuzdenKucukSayilar.sort((a, b) => a - b);
+console.log(siraliSayilar);
 // 3f çözümü
 
 /* kodlar buraya */
