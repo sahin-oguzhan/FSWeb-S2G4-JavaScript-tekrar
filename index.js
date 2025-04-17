@@ -117,7 +117,13 @@ console.log(enBuyuk);
 
 // 3b çözümü:
 
-/* kodlar buraya */
+const uceTamBolunenler = [];
+sayilar.forEach(function(sayi) {
+  if (sayi % 3 === 0){
+    uceTamBolunenler.push(sayi);
+  }
+});
+console.log(uceTamBolunenler);
 
 // 3c çözümü:
 
