@@ -140,7 +140,26 @@ const siraliSayilar = besyuzdenKucukSayilar.sort((a, b) => a - b);
 console.log(siraliSayilar);
 // 3f çözümü
 
-/* kodlar buraya */
+const tekraredenSayilar = [];
+const sayiSayaci = {};
+
+for (s of sayilar) {
+  const sayi = sayilar[s];
+
+  if (sayiSayaci[sayi]) {
+    sayiSayaci[sayi]++;
+  } else {
+    sayiSayaci[sayi] = 1;
+  }
+}
+
+for (s in sayiSayaci) {
+  if (sayiSayaci[s] > 1) {
+    tekraredenSayilar.push(`${s} sayısı ${sayiSayaci[s]} kere tekrar edilmiştir`);
+  }
+}
+
+console.log(tekraredenSayilar);
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
