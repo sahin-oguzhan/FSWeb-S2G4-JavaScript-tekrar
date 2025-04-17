@@ -117,10 +117,10 @@ console.log(enBuyuk);
 
 // 3b çözümü:
 
-const uceTamBolunenler = [];
+const uceTambolunenler = [];
 sayilar.forEach(function(sayi) {
   if (sayi % 3 === 0){
-    uceTamBolunenler.push(sayi);
+    uceTambolunenler.push(sayi);
   }
 });
 console.log(uceTamBolunenler);
