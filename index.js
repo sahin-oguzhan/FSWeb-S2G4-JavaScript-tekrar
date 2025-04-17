@@ -117,18 +117,18 @@ console.log(enBuyuk);
 
 // 3b çözümü:
 
-const uceTambolunenler = [];
+const uceTamBolunenler = [];
 sayilar.forEach(function(sayi) {
   if (sayi % 3 === 0){
-    uceTambolunenler.push(sayi);
+    uceTamBolunenler.push(sayi);
   }
 });
 console.log(uceTamBolunenler);
 
 // 3c çözümü:
 
-/* kodlar buraya */
-
+const uceBolunenlerinToplami = uceTamBolunenler.reduce((ilk, son) => ilk + son, 0);
+console.log(uceBolunenlerinToplami);
 // 3d çözümü
 
 /* kodlar buraya */
